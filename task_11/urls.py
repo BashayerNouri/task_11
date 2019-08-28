@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     path('restaurants/list/',views.restaurant_list ,name='restaurant-list'),
+    path('go/access/',views.access,name='access'),
     path('restaurants/<int:restaurant_id>/detail/',views.restaurant_detail ,name='restaurant-detail'),
 
     path('restaurants/create/',views.restaurant_create ,name='restaurant-create'),
